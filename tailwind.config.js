@@ -16,7 +16,11 @@ export default {
       backgroundImage: {
         'custom-radial-header': 'radial-gradient(circle, rgb(30, 60, 114), rgb(42, 82, 152))',
         'banner-image': 'linear-gradient(rgb(245, 247, 250), rgb(195, 207, 226))',
-        'button-background': 'linear-gradient(rgb(255, 149, 103), rgb(237, 78, 8))'
+        'button-background': 'linear-gradient(rgb(255, 149, 103), rgb(237, 78, 8))',
+        'custom-question-mark': 'linear-gradient(rgb(30, 60, 114), rgb(42, 82, 152))'
+      },
+      rotate: {
+        '-3': '-3deg'
       },
       dropShadow: {
         'header': 'rgb(0, 0, 0) 1px 2px 3px'
@@ -58,6 +62,8 @@ export default {
       'quicksand': ["Quicksand", 'sans-serif'],
       'roboto': ["Roboto", 'sans-serif'],
       'noto': ["Noto Serif", 'serif'],
+      'dancing': ["Dancing Script", 'cursive'],
+      'play-fair': ["Playfair Display", 'serif'],
     }
   },
   plugins: [],

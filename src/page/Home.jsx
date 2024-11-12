@@ -16,8 +16,20 @@ import image8 from "../image/vn-11134202-7qukw-lepplkxj675eb3-20240517110742-8db
 import image9 from "../image/vn-11134207-7qukw-licwa26ke02a3d-20240517110742-rarg9.jpg";
 import image10 from "../image/vn-11134207-7qukw-licxggfgy6z659-20240517110742-wreci.jpg";
 import image11 from "../image/vn-11134207-7qukw-licxggfgtz9u48-20240517110742-2we2v.jpg";
+import image12 from "../image/vn-11134207-7r98o-llxa54dvm127f0-20240517114039-b9oqk.jpg";
+import image13 from "../image/vn-11134207-7r98o-lmsl0hng78inb5_tn-20240517114011-g08fb.jpg";
+import image14 from "../image/vn-11134208-7r98o-llxa5i2n41y71c-20240517133101-22iuu.jpg";
+import image15 from "../image/9df215a9-7bcc-4f6e-810d-74933e131df4-20240517131143-55crr.jpg";
+import image16 from "../image/91c8c04e-6f06-46c0-a586-ab4cd2277ccd-20240517125958-ztsax.jpg";
+import image17 from "../image/710cc991-cca1-49c8-b919-ac4886a3e706-20240517131926-bew9u.jpg";
+import image18 from "../image/938e5e8c-7884-4637-9a8a-de9ea6c73783-20240517131926-ioeuj.jpg";
 
 import discount from "../image/dvgadvas-20201013084516.png";
+import check from "../image/check.png";
+import icon from "../image/icon-20200914085434.png";
+import delivery from "../image/delivery.png";
+import returnImg from "../image/return.png";
+import guarantee from "../image/guarantee.png";
 
 const listImages = [
   image1,
@@ -31,6 +43,24 @@ const listImages = [
   image9,
   image10,
   image11,
+];
+
+const privacyList = [
+  {
+    imgage: returnImg,
+    title: "ĐỔI TRẢ",
+    desc: "Trả hàng miễn phí trong 7 ngày",
+  },
+  {
+    imgage: guarantee,
+    title: "BẢO HÀNH",
+    desc: "Chính hãng 100% cam kết hoàn tiền",
+  },
+  {
+    imgage: delivery,
+    title: "VẬN CHUYỂN",
+    desc: "Toàn quốc, thanh toán khi nhận hàng",
+  },
 ];
 const Home = () => {
   const stars = Array(5).fill("⭐");
@@ -288,6 +318,119 @@ const Home = () => {
               {displayedText}
               <div className="h-full w-1 bg-white"></div>
             </button>
+          </div>
+        </div>
+      </div>
+      <div className="mt-3 px-1">
+        <h3 className="text-[22px] font-bold underline underline-offset-4">
+          Đau đầu vì ?
+        </h3>
+        <h4 className="text-sub-main font-bold text-xl pl-2">
+          Chưa tìm được kính{"   "}
+          <span className="font-dancing text-3xl">Kính thời trang</span>
+        </h4>
+        <div className="mx-4 flex flex-col items-center text-sm relative mt-3">
+          <h4>Ra đường mà cứ phải lo phối kính nào cho hợp</h4>
+          <h4>............BOLON EYEWEAR.............</h4>
+          <h4>Đẹp Mọi Góc Nhìn - Sang Mọi Khoảng Khắc</h4>
+          <h3 className="absolute top-[-20  px] right-[-10px] text-[57px] font-bold text-gradient">
+            ?
+          </h3>
+        </div>
+        <div className="w-[277px] h-[50px] mx-auto relative bg-main rounded-3xl mt-3">
+          <div className="w-full h-full capitalize text-[24px] font-bold flex justify-center items-center text-white rotate-[-3deg] border border-white   rounded-3xl">
+            Chất lượng kính
+          </div>
+        </div>
+        <div className="flex gap-2 mt-3">
+          <div className="flex flex-col gap-4 w-1/2">
+            <div className="relative">
+              <img
+                src={image12}
+                alt="Kính thời trang"
+                className="rounded-lg w-full"
+              />
+            </div>
+            <ul className="list-none space-y-2 text-sm text-gray-800">
+              <li className="flex items-start gap-2 text-[13px]">
+                <img src={check} className="w-5 h-5" alt="" />
+                Mắt kính được sử dụng vật liệu cao cấp đem lại độ nét cao với 4
+                lớp giúp thay đổi màu sắc nhanh chóng phù hợp địa hình thời tiết
+              </li>
+              <li className="flex items-start gap-2 text-[13px]">
+                <img src={check} className="w-5 h-5" alt="" />
+                Chống tia UV400, tia xanh
+              </li>
+              <li className="flex items-start gap-2 text-[13px]">
+                <img src={check} className="w-5 h-5" alt="" />2 màu sắc cực dễ
+                phối đồ
+              </li>
+            </ul>
+          </div>
+          <div className="width-1px h-[412px] bg-gray-custom"></div>
+          <div className="flex flex-col gap-4 w-1/2">
+            <ul className="list-none space-y-2 text-sm text-gray-800">
+              <li className="flex items-start gap-2 text-[13px]">
+                <img src={check} className="w-5 h-5" alt="" />
+                Khung kính được làm từ kim loại Titanium chắc chắn bền bỉ (17mm)
+              </li>
+              <li className="flex items-start gap-2 text-[13px]">
+                <img src={check} className="w-5 h-5" alt="" />
+                Gọng kính làm từ nhựa TR90 dẻo dai (150mm)
+              </li>
+              <li className="flex items-start gap-2 text-[13px]">
+                <img src={check} className="w-5 h-5" alt="" />
+                Thân kính ôm sát tạo cảm giác dễ chịu
+              </li>
+            </ul>
+            <br />
+            <div className="relative">
+              <img
+                src={image13}
+                alt="Gọng thời trang"
+                className="rounded-lg w-full"
+              />
+            </div>
+          </div>
+        </div>
+        <div className="mt-2 w-full height-1px bg-gray-custom"></div>
+      </div>
+      <div className="flex flex-col items-center">
+        <div className="w-[277px] h-[50px] mx-auto relative bg-main rounded-3xl my-3">
+          <div className="w-full h-full capitalize text-[24px] font-bold flex justify-center items-center text-white rotate-[-3deg] border border-white   rounded-3xl">
+            Mô Tả Chi Tiết
+          </div>
+        </div>
+        <img src={image14} alt="image-14" />
+        <img src={image10} alt="image-10" />
+        <div className="mt-3 flex flex-col items-center">
+          <h4 className="text-[28px] font-play-fair font-bold text-main">
+            Chính sách
+          </h4>
+          <img src={icon} className="w-[187px] h-[26px]" alt="" />
+          <div className="flex gap-4 justify-center p-4 mt-3">
+            {privacyList.map((item, index) => (
+              <div
+                className="flex flex-col items-center border px-2 py-6 relative"
+                key={index}
+              >
+                <div className="bg-main w-10 h-10 text-white rounded-full flex justify-center items-center absolute top-[-20px] left-1/2 translate-x-[-50%] z-20 mb-4">
+                  <img className="w-[25px] h-[25px]" src={item.imgage} alt="" />
+                </div>
+                <h3 className="font-bold text-gray-custom mb-2 text-[13px] mt-2">
+                  {item.title}
+                </h3>
+                <p className="text-center text-gray-custom text-xs p-2">
+                  {item.desc}
+                </p>
+              </div>
+            ))}
+          </div>
+          <div className="grid grid-cols-2 gap-1 px-1">
+            <img src={image15} alt="" />
+            <img src={image16} alt="" />
+            <img src={image17} className="h-[230px] w-full" alt="" />
+            <img src={image18} className="h-[230px]" alt="" />
           </div>
         </div>
       </div>

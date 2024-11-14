@@ -17,7 +17,8 @@ export default {
         'custom-radial-header': 'radial-gradient(circle, rgb(30, 60, 114), rgb(42, 82, 152))',
         'banner-image': 'linear-gradient(rgb(245, 247, 250), rgb(195, 207, 226))',
         'button-background': 'linear-gradient(rgb(255, 149, 103), rgb(237, 78, 8))',
-        'custom-question-mark': 'linear-gradient(rgb(30, 60, 114), rgb(42, 82, 152))'
+        'custom-question-mark': 'linear-gradient(rgb(30, 60, 114), rgb(42, 82, 152))',
+        'main-custom': 'radial-gradient(circle, rgb(254, 9, 68), rgb(254, 174, 150))',
       },
       rotate: {
         '-3': '-3deg'
@@ -30,7 +31,7 @@ export default {
       },
       animation: {
         'pulse-scale': 'pulse-scale 3s infinite',
-        flash: 'flash 3s infinite',
+        flash: 'flash 2s infinite',
         'rotate-word': 'rotateWord 3s infinite',
         'swing-custom': 'swingCustom 1s ease-in-out infinite',
       },
@@ -64,6 +65,8 @@ export default {
       'noto': ["Noto Serif", 'serif'],
       'dancing': ["Dancing Script", 'cursive'],
       'play-fair': ["Playfair Display", 'serif'],
+      'tino': ["Tinos", 'serif'],
+      'trirong': ["Trirong", 'serif'],
     }
   },
   plugins: [],

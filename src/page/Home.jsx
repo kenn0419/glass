@@ -156,7 +156,6 @@ const Home = () => {
     handleSubmit,
     formState: { errors },
     reset,
-    watch,
   } = useForm();
   useEffect(() => {
     var stockInterval = setInterval(function () {
@@ -236,7 +235,7 @@ const Home = () => {
           "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
         },
       })
-      .then((response) => {
+      .then(() => {
         reset({
           name: "",
           phone: "",
@@ -694,7 +693,7 @@ const Home = () => {
                       id="Trắng gọng Đen"
                       className="mr-2 text-black border-gray-400 focus:ring-0"
                       checked={typeList.includes("Trắng gọng Đen")}
-                      onChange={(e) => handleCheckbox("Trắng gọng Đen")}
+                      onChange={() => handleCheckbox("Trắng gọng Đen")}
                     />
                     <label
                       htmlFor="Trắng gọng Đen"
@@ -708,7 +707,7 @@ const Home = () => {
                       type="checkbox"
                       id="Trắng gọng Xám"
                       checked={typeList.includes("Trắng gọng Xám")}
-                      onChange={(e) => handleCheckbox("Trắng gọng Xám")}
+                      onChange={() => handleCheckbox("Trắng gọng Xám")}
                       className="mr-2 text-white border-gray-400 focus:ring-0"
                     />
                     <label

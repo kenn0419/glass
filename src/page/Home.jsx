@@ -5,15 +5,15 @@ import "swiper/css/navigation";
 import "swiper/css/thumbs";
 import { FreeMode, Navigation, Thumbs } from "swiper/modules";
 import { SwiperSlide, Swiper } from "swiper/react";
-import image1 from "../image/snapedit_1715944993398-20240517112645-6h-le.jpeg";
-import image2 from "../image/snapedit_1715945004320-20240517112645-rwdes.jpeg";
-import image3 from "../image/vn-11134207-7r98o-luln935u23vp44-20240517112645-frax8.jpg";
-import image4 from "../image/vn-11134207-7qukw-lfkq2cmodfn949-20240517110742-kglxr.jpg";
-import image5 from "../image/vn-11134207-7qukw-licxggfgskpede-20240517110742-m_odc.jpg";
-import image6 from "../image/vn-11134202-7qukw-leqy4j6n24s316-20240517110742-cszoa.jpg";
-import image7 from "../image/vn-11134202-7qukw-leppll150x4i3e-20240517110742-zsjao.jpg";
-import image8 from "../image/vn-11134202-7qukw-lepplkxj675eb3-20240517110742-8dbpm.jpg";
-import image9 from "../image/vn-11134207-7qukw-licwa26ke02a3d-20240517110742-rarg9.jpg";
+import image1 from "../image/51a33e50d09b6bc5328a.jpg";
+import image2 from "../image/93f980126ad9d18788c8.jpg";
+import image3 from "../image/400aa5964f5df403ad4c.jpg";
+import image4 from "../image/526a081de2d6598800c7.jpg";
+import image5 from "../image/fcae5149b98202dc5b93.jpg";
+import image6 from "../image/4c3ab147598ce2d2bb9d.jpg";
+import image7 from "../image/6ced21f0ca3b7165282a.jpg";
+import image8 from "../image/5bdee3b0-59fe-41a9-81a1-96b9d72487ae.jpg";
+import image9 from "../image/306c27dacf11744f2d00.jpg";
 import image10 from "../image/vn-11134207-7qukw-licxggfgy6z659-20240517110742-wreci.jpg";
 import image11 from "../image/vn-11134207-7qukw-licxggfgtz9u48-20240517110742-2we2v.jpg";
 import image12 from "../image/vn-11134207-7r98o-llxa54dvm127f0-20240517114039-b9oqk.jpg";
@@ -59,17 +59,17 @@ import { TbNotes } from "react-icons/tb";
 import { MdOutlineMessage } from "react-icons/md";
 
 const listImages = [
-  image1,
+  // image1,
+  image5,
   image2,
   image3,
   image4,
-  image5,
-  image6,
-  image7,
-  image8,
-  image9,
-  image10,
-  image11,
+  // image6,
+  // image7,
+  // image8,
+  // image9,
+  // image10,
+  // image11,
 ];
 
 const reviews = [
@@ -256,7 +256,7 @@ const Home = () => {
   };
   return (
     <>
-      <div className="bg-custom-radial-header px-2 fixed w-[420px] top-0 z-30">
+      <div className="bg-[#6A2F8D] px-2 fixed w-[420px] top-0 z-30">
         <div className="flex justify-between items-center">
           <div className="flex gap-1">
             <h3 className="text-base font-sriracha drop-shadow-header text-white">
@@ -266,7 +266,7 @@ const Home = () => {
               50%
             </span>
           </div>
-          <div>
+          <div className="">
             <button className="uppercase font-quicksand py-1 px-6 text-[18px] bg-white rounded-[20px] font-bold animate-flash">
               Mua ngay
             </button>
@@ -274,26 +274,26 @@ const Home = () => {
         </div>
         <div className="pb-2">
           <h2 className="font-roboto text-white">
-            SỐ LƯỢNG QUÀ TẶNG CHỈ{" "}
+            SỐ LƯỢNG QUÀ TẶNG CHỈ CÒN{" "}
             <span id="stock" className="text-[#e8b730] animate-flash">
               150
             </span>{" "}
-            CÒN KÍNH
+            SẢN PHẨM
           </h2>
         </div>
       </div>
       <div className="relative mt-[100px]">
-        <div className="w-[145px] h-[185px] bg-main relative">
+        <div className="w-[145px] h-[185px] bg-purple-700 relative">
           <div className="w-4 h-4 absolute top-0 left-1/4 bg-white"></div>
         </div>
         <div className="absolute left-1 top-5">
-          <div className="relative bg-sub-main px-3 pt-2 pb-6 mx-3">
-            <h3 className="text-[27px] text-white font-bold">
-              Kính Mắt Đổi Màu Bolan
+          <div className="relative bg-purple-500 px-3 pt-2 pb-6 mx-3">
+            <h3 className="text-[27px] text-white font-bold w-[365px]">
+              LILYFRESH
             </h3>
             <div className="absolute bottom-[-25px] left-3 bg-inherit bg-banner-image py-2 px-4">
-              <h3 className="text-base font-sriracha text-black">
-                Đẹp Mọi Góc Nhìn - Sang Mọi Khoảng Khắc
+              <h3 className="text-sm font-sriracha text-black capitalize">
+                CÔNG TY TNHH PHÁT TRIỂN SỨC KHỎE CỘNG ĐỒNG QUỐC GIA VIỆT NAM
               </h3>
             </div>
           </div>
@@ -372,12 +372,12 @@ const Home = () => {
           </h3>
         </div>
         <div className="px-3">
-          <h2 className="font-noto text-[23px] font-bold">
-            Kính Mắt Đổi Màu Cao Cấp
+          <h2 className="font-noto text-xl font-bold">
+            BỘ MUỐI DUNG DỊCH VỆ SINH PHỤ NỮ
           </h2>
           <div className="pl-3">
-            <h4 className="font-quicksand text-[17px] font-bold mb-2">
-              Thời trang - Cá Tính - Phong Cách
+            <h4 className="font-quicksand text-[17px] text-center font-bold mb-2">
+              Hộp 1 lọ và 1 bình rửa
             </h4>
             <div className="flex gap-1">
               <div className="flex gap-1">
@@ -444,7 +444,7 @@ const Home = () => {
               Miễn phí ship hàng toàn quốc
             </p>
           </div>
-          <div className="flex justify-center">
+          <div className="flex justify-center pb-2">
             <button className="text-[19px] h-[52px] bg-button-background text-white py-3 px-8 font-bold rounded-[60px] mt-3 flex gap-1">
               {displayedText}
               <div className="h-full w-1 bg-white"></div>
@@ -456,25 +456,24 @@ const Home = () => {
         <h3 className="text-[22px] font-bold underline underline-offset-4">
           Đau đầu vì ?
         </h3>
-        <h4 className="text-sub-main font-bold text-xl pl-2">
-          Chưa tìm được kính{"   "}
-          <span className="font-dancing text-3xl">Kính thời trang</span>
+        <h4 className="text-sub-main font-bold text-lg pl-2">
+          Chưa tìm được dung dịch vệ sinh phù hợp
         </h4>
         <div className="mx-4 flex flex-col items-center text-sm relative mt-3">
-          <h4>Ra đường mà cứ phải lo phối kính nào cho hợp</h4>
-          <h4>............BOLON EYEWEAR.............</h4>
-          <h4>Đẹp Mọi Góc Nhìn - Sang Mọi Khoảng Khắc</h4>
+          <h4>Mùi hôi, nhiễm khuẩn, khó chịu thân thể</h4>
+          <h4>............LILYFRESH.............</h4>
+          <h4 className="uppercase">Tự tin - tươi trẻ mọi thời điểm</h4>
           <h3 className="absolute top-[-20  px] right-[-10px] text-[57px] font-bold text-gradient">
             ?
           </h3>
         </div>
         <div className="w-[277px] h-[50px] mx-auto relative bg-main rounded-3xl mt-3">
-          <div className="w-full h-full capitalize text-[24px] font-bold flex justify-center items-center text-white rotate-[-3deg] border border-white   rounded-3xl">
-            Chất lượng kính
+          <div className="w-full h-full capitalize text-xl font-bold flex justify-center items-center text-white rotate-[-3deg] border border-white rounded-3xl">
+            Đại diện thương hiệu
           </div>
         </div>
-        <div className="flex gap-2 mt-3">
-          <div className="flex flex-col gap-4 w-1/2">
+        <div className="flex justify-center gap-2 mt-3">
+          {/* <div className="flex flex-col gap-4 w-1/2">
             <div className="relative">
               <img
                 src={image12}
@@ -522,7 +521,8 @@ const Home = () => {
                 className="rounded-lg w-full"
               />
             </div>
-          </div>
+          </div> */}
+          <img src={image1} alt="" />
         </div>
         <div className="mt-2 w-full height-1px bg-gray-custom"></div>
       </div>
@@ -532,8 +532,8 @@ const Home = () => {
             Mô Tả Chi Tiết
           </div>
         </div>
-        <img src={image14} alt="image-14" />
-        <img src={image10} alt="image-10" />
+        <img src={image8} alt="image-8" />
+        {/* <img src={image10} alt="image-10" /> */}
         <div className="mt-3 flex flex-col items-center">
           <h4 className="text-[28px] font-play-fair font-bold text-main">
             Chính sách
@@ -557,11 +557,11 @@ const Home = () => {
               </div>
             ))}
           </div>
-          <div className="grid grid-cols-2 gap-1 px-1">
-            <img src={image15} alt="" />
-            <img src={image16} alt="" />
+          <div className="grid grid-cols-1 gap-1 px-1">
+            <img src={image9} alt="" />
+            {/* <img src={image16} alt="" />
             <img src={image17} className="h-[230px] w-full" alt="" />
-            <img src={image18} className="h-[230px]" alt="" />
+            <img src={image18} className="h-[230px]" alt="" /> */}
           </div>
         </div>
       </div>
@@ -595,17 +595,17 @@ const Home = () => {
           </div>
         </div>
         <div className="flex justify-between relative">
-          <div className="h-[300px] w-5 bg-main"></div>
+          {/* <div className="h-[300px] w-5 bg-main"></div>
           <div className="absolute left-0 top-[-10px]">
             <div className="relative">
               <img src={image19} className="w-[217px] h-[333px]" alt="" />
               <div className="w-full h-6 bg-main absolute bottom-[-17px] left-0"></div>
             </div>
-          </div>
-          <img src={image20} className="w-[276px] h-[340px]" alt="" />
+          </div> */}
+          <img src={image6} className="w-full my-3 h-auto" alt="" />
         </div>
       </div>
-      <div className="bg-main rounded-3xl">
+      <div className="bg-[#6A2F8D] rounded-3xl">
         <div className="flex flex-col items-center py-2 px-5 ">
           <h1 className="uppercase font-tino text-gradient-white">
             Đăng ký nhận ưu đãi
@@ -949,8 +949,8 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="bg-main text-white py-8 px-4">
-        <h2 className="text-3xl font-bold">BOLAN EYEWEAR</h2>
+      <div className="bg-[#6A2F8D] text-white py-8 px-4">
+        <h2 className="text-3xl font-bold">LILYFRESH</h2>
         <p className="text-lg mt-1 pl-6 font-bold">Uy tín tạo thương hiệu</p>
 
         <div className="mt-6 space-y-4">

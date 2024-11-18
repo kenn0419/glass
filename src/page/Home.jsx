@@ -951,7 +951,7 @@ const Home = () => {
       </div>
       <div className="bg-[#6A2F8D] text-white py-8 px-4">
         <h2 className="text-3xl font-bold">LILYFRESH</h2>
-        <p className="text-lg mt-1 pl-6 font-bold">Uy tín tạo thương hiệu</p>
+        <p className="text-lg mt-1 pl-6 font-bold">Vì sức khoẻ Phụ nữ</p>
 
         <div className="mt-6 space-y-4">
           <div className="flex items-end gap-2">

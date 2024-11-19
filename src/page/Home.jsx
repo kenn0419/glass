@@ -26,14 +26,14 @@ import image18 from "../image/938e5e8c-7884-4637-9a8a-de9ea6c73783-2024051713192
 import image19 from "../image/256fcbe7-e6df-4aeb-96b9-75516ae62006-20240517125958--qfn2.png";
 import image20 from "../image/6e0c8ea6-ee27-4628-9574-b5361166678d-20240517223820-fihk-.png";
 import image21 from "../image/a68938b71770bd2ee46115-20240130232841-s1coe.jpg";
-import image22 from "../image/th-11134103-7r98o-lvblooqzena7-20240517135048-snult.jpg";
+import image22 from "../image/bd4aa0420088bbd6e299.jpg";
 import image23 from "../image/f3723a2d-f335-4fbe-a992-5f5d93660390-20240517224627-memni.jpg";
 import image24 from "../image/kinh-20240517110752-_l1dp.jpg";
 import image25 from "../image/vn-11134103-22080-2c1y9v4mj3fv7d-20220812020342.jpg";
-import image26 from "../image/5fd378cb-6fd7-48f5-964e-ea5c36acdfc9-20240517224627-l--yj.jpg";
+import image26 from "../image/138c3be89b22207c7933.jpg";
 import image27 from "../image/vn-11134103-7qukw-lft5xemena7-20240517135006-_zuub.jpg";
 import image28 from "../image/vn-11134103-7qukw-lgk4pzqxapy-02-20230902085705-lpis8.jpg";
-import image29 from "../image/vn-11134103-7qukw-lft5xemena7-20240517135006-_zuub.jpg";
+import image29 from "../image/331eda4b7a81c1df9890.jpg";
 import image30 from "../image/vn-11134103-7qukw-lft5woex5ena7-20240517135006-cvgai.jpg";
 
 import discount from "../image/dvgadvas-20201013084516.png";
@@ -75,37 +75,37 @@ const listImages = [
 const reviews = [
   {
     id: 1,
-    name: "Vũ Nguyên",
-    avatar: image21,
+    name: "Lan Nguyễn",
+    avatar: image15,
     comment:
       "giao hàng nhanh, kính đẹp, shop còn có cả hộp kính và khăn lau kính, tuy lần trước mua hàng không thành công lắm ung mà shop có trả lời tư vấn nhiệt tình, cách phục vụ của shop cảm thấy ok.",
-    images: [image22, image23],
+    images: [image22],
     like: 4,
     time: "3 tiếng trước",
     response: {
       avatar: image24,
-      name: "BOLAN EYEWEAR",
-      comment: "Cảm ơn bạn rất nhiều đã ủng hộ BOLAN EYEWEAR !",
+      name: "LILYFRESH",
+      comment: "Cảm ơn bạn rất nhiều đã ủng hộ LILYFRESH !",
       time: "2 tiếng trước",
     },
   },
   {
     id: 2,
     name: "Lê Huỳnh Như",
-    avatar: image25,
+    avatar: image16,
     comment:
       "gói cận thận, giao hàng nhanh - mới test đổi màu r mới đánh giá 😗 không còn j để chê 10₫",
-    images: [image26, image27],
+    images: [image26],
     like: 2,
     time: "1 ngày trước",
   },
   {
     id: 3,
-    name: "Trung Bùi",
-    avatar: image28,
+    name: "Trần Thị Minh Tuyết",
+    avatar: image25,
     comment:
       "Kính giá 99k là xứng đáng , đeo ko đau tai , kính nhìn rõ nha. Có vẻ đi ngoài nắng và dưới đèn xe là đc nha ở ngoài nhìn đẹp lắm màu đeo sang nha. Có cái kính hơi to hơn mình nghĩ , đặc biệt shop tư vấn rất nhiệt tình",
-    images: [image29, image30],
+    images: [image29],
     like: 4,
     time: "1 tuần trước",
   },
@@ -418,10 +418,10 @@ const Home = () => {
           <div className="ml-2 mt-3 p-2 bg-gray-100">
             <div className=" flex justify-between flex-nowrap items-center">
               <span className="line-through text-sm text-gray-custom pl-3">
-                150.000VND
+                338.000VND
               </span>
               <span className="text-[18px] font-bold text-[#f96e40] animate-flash">
-                75.000Đ
+                169.000Đ
               </span>
               <button className="border-none bg-orange-custom text-white font-bold text-sm py-1 px-4 rounded-2xl flex gap-1">
                 Giảm giá 50%
@@ -581,10 +581,10 @@ const Home = () => {
             <div className="h-[50px] w-[1px] bg-gray-400"></div>
             <div className="flex flex-col">
               <span className="font-bold text-[17px] line-through">
-                150.000 VNĐ
+                338.000 VNĐ
               </span>
-              <span className="text-[23px] font-bold animate-flash text-main">
-                75.000 VNĐ
+              <span className="text-[22px] font-bold animate-flash text-main">
+                169.000 VNĐ
               </span>
             </div>
           </div>
@@ -615,9 +615,9 @@ const Home = () => {
           </span>
         </div>
         <div className="bg-[#F9F8F8] flex items-center justify-between px-3 py-2">
-          <span className="text-[15px] line-through">150.000đ</span>
+          <span className="text-[15px] line-through">338.000đ</span>
           <span className="text-xl text-red-custom font-bold">
-            Chỉ còn 75.000đ
+            Chỉ còn 169.000đ
           </span>
           <div className="bg-main-custom p-2 text-white font-bold text-sm rounded-tl-2xl rounded-br-2xl animate-pulse-scale">
             Giảm tới 50%
@@ -677,16 +677,19 @@ const Home = () => {
                   <option value="" disabled defaultValue hidden>
                     Số lượng
                   </option>
-                  <option value="1 Kính + Fullbox : 75k + 25k Ship">
-                    {"1 Kính + Fullbox : 75k + 25k Ship"}
+                  <option value="1 hộp + 1 bình : 169k">
+                    1 hộp + 1 bình : 169k + free ship toàn quốc
                   </option>
-                  <option value="2 Kính + Fullbox : 149k + Miễn phí Ship">
-                    2 Kính + Fullbox : 149k + Miễn phí Ship
+                  <option value="2 hộp + 2 bình : 309k">
+                    2 hộp + 2 bình : 309k + free ship toàn quốc
+                  </option>
+                  <option value="3 hộp + 3 bình : 396k">
+                    3 hộp + 3 bình : 396k + free ship toàn quốc
                   </option>
                 </select>
               </div>
               <div className="grid grid-cols-2 grid-rows-2 gap-3">
-                <div className="col-span-1 row-span-1 flex flex-col gap-2 mt-2 flex-wrap px-2 justify-center bg-white rounded-lg h-full">
+                {/* <div className="col-span-1 row-span-1 flex flex-col gap-2 mt-2 flex-wrap px-2 justify-center bg-white rounded-lg h-full">
                   <div className="flex items-center">
                     <input
                       type="checkbox"
@@ -717,8 +720,8 @@ const Home = () => {
                       Trắng gọng Xám
                     </label>
                   </div>
-                </div>
-                <div className="col-span-1 row-span-2 mt-2 items-center flex-wrap">
+                </div> */}
+                <div className="col-span-2 row-span-2 mt-2 items-center flex-wrap">
                   <textarea
                     name="message"
                     id="message"
@@ -728,7 +731,7 @@ const Home = () => {
                     onChange={(e) => setMessage(e.target.value)}
                   ></textarea>
                 </div>
-                <div className="col-span-1 row-span-1 flex gap-4 mt-2 items-center flex-wrap">
+                {/* <div className="col-span-1 row-span-1 flex gap-4 mt-2 items-center flex-wrap">
                   <select
                     name="myopia"
                     id="myopia"
@@ -749,14 +752,14 @@ const Home = () => {
                     <option value="Cận thị 3°">Cận thị 3°</option>
                     <option value="Cận thị 3.5°">Cận thị 3.5°</option>
                   </select>
-                </div>
+                </div> */}
               </div>
               <div className="flex justify-center items-center w-[300px] mx-auto bg-main-custom py-3 px-8 rounded-tl-3xl rounded-br-3xl mt-4 animate-pulse-scale">
                 <button
                   type="submit"
-                  className="text-white font-tino font-bold text-[23px] animate-flash"
+                  className="text-white text-center font-tino font-bold text-[23px] animate-flash"
                 >
-                  NHẬN ƯU ĐÃI
+                  ĐẶT HÀNG NHẬN ƯU ĐÃI
                 </button>
               </div>
               <p className="w-[297px] mx-auto text-white mt-3 mb-4 text-xs text-center">
@@ -954,23 +957,11 @@ const Home = () => {
         <p className="text-lg mt-1 pl-6 font-bold">Vì sức khoẻ Phụ nữ</p>
 
         <div className="mt-6 space-y-4">
-          <div className="flex items-end gap-2">
-            <span>
-              <IoMdHome size={24} />
-            </span>
-            <p className="text-sm">Address: 15 La Khê, Hà Đông, Hà Nội</p>
-          </div>
           <div className="flex items-center gap-2">
             <span>
               <FaPhoneAlt size={20} />
             </span>
-            <p className="text-sm">Hotline: +84382562666</p>
-          </div>
-          <div className="flex items-center gap-2">
-            <span>
-              <FaCamera size={24} />
-            </span>
-            <p className="text-sm">INS : BolenEyewear</p>
+            <p className="text-sm">Hotline: 094 5434 292</p>
           </div>
         </div>
 

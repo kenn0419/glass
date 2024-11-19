@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/navigation";
@@ -129,6 +129,7 @@ const privacyList = [
   },
 ];
 const Home = () => {
+  const formRef = useRef();
   const stars = Array(5).fill("⭐");
   const text = "Mua ngay"; // Chuỗi gốc
   const [displayedText, setDisplayedText] = useState(text); // State cho chuỗi đang hiển thị
@@ -137,7 +138,7 @@ const Home = () => {
   const [typeList, setTypeList] = useState([]);
   const [quantity, setQuantity] = useState(null);
   const [myopia, setMyopia] = useState(null);
-  const [message, setMessage] = useState(null);
+  const [message, setMessage] = useState("");
   const renderStar = (starNumbers, size) => {
     const stars = [];
     starNumbers = Math.round(starNumbers);
@@ -228,7 +229,7 @@ const Home = () => {
     data.message = message;
     data.type = typeList.join(", ");
     const scriptURL =
-      "https://script.google.com/macros/s/AKfycby41nOjhGAXQBJM_kvrlgPVz06_RQYdmrm2VDws4zRjfBZO55HPTq-cm5a4zZgLBUBScg/exec";
+      "https://script.google.com/macros/s/AKfycbxv8_M5VzgN4x4TExzpEIHNA7ZOAd7TA_LYc8Ihi05PazEaD7W-z_AxOdHa16rkrKSJ1Q/exec";
     axios
       .post(scriptURL, data, {
         headers: {
@@ -254,6 +255,10 @@ const Home = () => {
         alert("Có lỗi xảy ra khi gửi dữ liệu, vui lòng thử lại sau.");
       });
   };
+
+  const handleBuy = () => {
+    formRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <>
       <div className="bg-[#6A2F8D] px-2 fixed w-[420px] top-0 z-30">
@@ -267,7 +272,10 @@ const Home = () => {
             </span>
           </div>
           <div className="">
-            <button className="uppercase font-quicksand py-1 px-6 text-[18px] bg-white rounded-[20px] font-bold animate-flash">
+            <button
+              className="uppercase font-quicksand py-1 px-6 text-[18px] bg-white rounded-[20px] font-bold animate-flash"
+              onClick={handleBuy}
+            >
               Mua ngay
             </button>
           </div>
@@ -288,11 +296,11 @@ const Home = () => {
         </div>
         <div className="absolute left-1 top-5">
           <div className="relative bg-purple-500 px-3 pt-2 pb-6 mx-3">
-            <h3 className="text-[27px] text-white font-bold w-[365px]">
+            <h3 className="text-[27px] text-white font-oswald font-bold w-[365px]">
               LILYFRESH
             </h3>
-            <div className="absolute bottom-[-25px] left-3 bg-inherit bg-banner-image py-2 px-4">
-              <h3 className="text-sm font-sriracha text-black capitalize">
+            <div className="absolute bottom-[-30px] left-3 bg-inherit bg-banner-image py-2 px-4 w-[101%]">
+              <h3 className="text-sm font-quicksand italic font-bold text-black capitalize">
                 CÔNG TY TNHH PHÁT TRIỂN SỨC KHỎE CỘNG ĐỒNG QUỐC GIA VIỆT NAM
               </h3>
             </div>
@@ -445,7 +453,10 @@ const Home = () => {
             </p>
           </div>
           <div className="flex justify-center pb-2">
-            <button className="text-[19px] h-[52px] bg-button-background text-white py-3 px-8 font-bold rounded-[60px] mt-3 flex gap-1">
+            <button
+              className="text-[19px] h-[52px] bg-button-background text-white py-3 px-8 font-bold rounded-[60px] mt-3 flex gap-1"
+              onClick={handleBuy}
+            >
               {displayedText}
               <div className="h-full w-1 bg-white"></div>
             </button>
@@ -623,7 +634,7 @@ const Home = () => {
             Giảm tới 50%
           </div>
         </div>
-        <div className="px-3 py-1">
+        <div ref={formRef} className="px-3 py-1">
           <div>
             <h4 className="text-sm text-white font-bold">
               Giá khuyến mãi sẽ kết thúc
@@ -688,7 +699,7 @@ const Home = () => {
                   </option>
                 </select>
               </div>
-              <div className="grid grid-cols-2 grid-rows-2 gap-3">
+              <div className="grid grid-cols-2 grid-rows-3 gap-3">
                 {/* <div className="col-span-1 row-span-1 flex flex-col gap-2 mt-2 flex-wrap px-2 justify-center bg-white rounded-lg h-full">
                   <div className="flex items-center">
                     <input
@@ -721,7 +732,7 @@ const Home = () => {
                     </label>
                   </div>
                 </div> */}
-                <div className="col-span-2 row-span-2 mt-2 items-center flex-wrap">
+                <div className="col-span-2 row-span-3 mt-2 items-center flex-wrap">
                   <textarea
                     name="message"
                     id="message"

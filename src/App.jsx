@@ -63,15 +63,15 @@ function App() {
         className={`fixed top-1 left-4 p-4 rounded-lg shadow-lg transition-opacity z-50 duration-500 ${
           isVisible ? "opacity-100" : "opacity-0"
         } bg-white`}
-        style={{ width: "250px" }}
+        style={{ width: "300px" }}
       >
         <div className="flex items-center">
           <img
             src={image}
             alt={title}
-            className="w-10 h-10 rounded-full mr-3"
+            className="w-14 h-14 rounded-full mr-3"
           />
-          <div>
+          <div className="flex flex-col gap-1">
             <p className="font-semibold">{title}</p>
             <p className="text-gray-600 text-sm">{content}</p>
             <p className="text-gray-400 text-xs">{time}</p>

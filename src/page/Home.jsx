@@ -232,7 +232,7 @@ const Home = () => {
     data.message = message;
     data.type = typeList.join(", ");
     const scriptURL =
-      "https://script.google.com/macros/s/AKfycbxv8_M5VzgN4x4TExzpEIHNA7ZOAd7TA_LYc8Ihi05PazEaD7W-z_AxOdHa16rkrKSJ1Q/exec";
+      "https://script.google.com/macros/s/AKfycbxo5Srrpj81IFBjwST32j9JcrH0sjZh7s1F5xm6_jils2LwncFCs1Fcgs8y4G1tVi5HDg/exec";
     axios
       .post(scriptURL, data, {
         headers: {
@@ -329,7 +329,7 @@ const Home = () => {
             "--swiper-navigation-color": "#fff",
             "--swiper-pagination-color": "#fff",
           }}
-          loop={listImages.length > 1}
+          // loop={listImages.length > 1}
           spaceBetween={10}
           navigation={true}
           thumbs={{ swiper: thumbsSwiper }}
@@ -344,7 +344,7 @@ const Home = () => {
         </Swiper>
         <Swiper
           onSwiper={setThumbsSwiper}
-          loop={listImages.length > 1}
+          // loop={listImages.length > 1}
           spaceBetween={10}
           slidesPerView={4}
           freeMode={true}

@@ -60,16 +60,15 @@ function App() {
   return (
     <div className="w-[420px] lg:w-full min-h-screen">
       <div
-        className={`fixed top-1 left-4 p-4 rounded-lg shadow-lg transition-opacity z-50 duration-500 ${
+        className={`w-[250px] h-24 lg:w-[300px] fixed top-1 left-4 p-4 rounded-lg shadow-lg transition-opacity z-50 duration-500 ${
           isVisible ? "opacity-100" : "opacity-0"
         } bg-white`}
-        style={{ width: "300px" }}
       >
         <div className="flex items-center">
           <img
             src={image}
             alt={title}
-            className="w-14 h-14 rounded-full mr-3"
+            className="w-10 h-10 rounded-full mr-3"
           />
           <div className="flex flex-col gap-1">
             <p className="font-semibold">{title}</p>

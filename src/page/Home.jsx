@@ -26,14 +26,14 @@ import image18 from "../image/938e5e8c-7884-4637-9a8a-de9ea6c73783-2024051713192
 import image19 from "../image/256fcbe7-e6df-4aeb-96b9-75516ae62006-20240517125958--qfn2.png";
 import image20 from "../image/6e0c8ea6-ee27-4628-9574-b5361166678d-20240517223820-fihk-.png";
 import image21 from "../image/a68938b71770bd2ee46115-20240130232841-s1coe.jpg";
-import image22 from "../image/bd4aa0420088bbd6e299.jpg";
+import image22 from "../image/ef4673be4264f93aa075.jpg";
 import image23 from "../image/f3723a2d-f335-4fbe-a992-5f5d93660390-20240517224627-memni.jpg";
-import image24 from "../image/kinh-20240517110752-_l1dp.jpg";
+import image24 from "../image/66fda0a15672ed2cb463.jpg";
 import image25 from "../image/vn-11134103-22080-2c1y9v4mj3fv7d-20220812020342.jpg";
-import image26 from "../image/138c3be89b22207c7933.jpg";
+import image26 from "../image/5a648a2e87f43caa65e5.jpg";
 import image27 from "../image/vn-11134103-7qukw-lft5xemena7-20240517135006-_zuub.jpg";
 import image28 from "../image/vn-11134103-7qukw-lgk4pzqxapy-02-20230902085705-lpis8.jpg";
-import image29 from "../image/331eda4b7a81c1df9890.jpg";
+import image29 from "../image/9d437e8c7456cf089647.jpg";
 import image30 from "../image/vn-11134103-7qukw-lft5woex5ena7-20240517135006-cvgai.jpg";
 
 import discount from "../image/dvgadvas-20201013084516.png";
@@ -75,10 +75,11 @@ const listImages = [
 const reviews = [
   {
     id: 1,
-    name: "Lan Nguyễn",
-    avatar: image15,
+    name: "Trần Thị Ánh Hồng",
+    avatar:
+      "https://i.pinimg.com/564x/60/68/5e/60685e648c859039aff37c840ad1f4b0.jpg",
     comment:
-      "giao hàng nhanh, kính đẹp, shop còn có cả hộp kính và khăn lau kính, tuy lần trước mua hàng không thành công lắm ung mà shop có trả lời tư vấn nhiệt tình, cách phục vụ của shop cảm thấy ok.",
+      "Sản phẩm dùng tốt, mát, dùng xong cảm giác sạch sâu, hết hẳng mùi sau 2 ngày. Sẽ quay lại mua tiếp",
     images: [image22],
     like: 4,
     time: "3 tiếng trước",
@@ -91,20 +92,22 @@ const reviews = [
   },
   {
     id: 2,
-    name: "Lê Huỳnh Như",
-    avatar: image16,
+    name: "Ngô Bảo Trân",
+    avatar:
+      "https://i.pinimg.com/564x/cf/8d/25/cf8d2531ab9cdb57ad9c8f1013a3f4f1.jpg",
     comment:
-      "gói cận thận, giao hàng nhanh - mới test đổi màu r mới đánh giá 😗 không còn j để chê 10₫",
+      "Giao hàng nhanh. Sản phẩm đúng như mô tả. Sử dụng rất hiệu quả. Không kích ứng hay dị ứng. Cho shop 5 sao về chất lượng nhé",
     images: [image26],
     like: 2,
     time: "1 ngày trước",
   },
   {
     id: 3,
-    name: "Trần Thị Minh Tuyết",
-    avatar: image25,
+    name: "Vũ Khánh Huyền",
+    avatar:
+      "https://i.pinimg.com/736x/9e/92/d0/9e92d0f7e3b95e2f78e75509dcb30a58.jpg",
     comment:
-      "Kính giá 99k là xứng đáng , đeo ko đau tai , kính nhìn rõ nha. Có vẻ đi ngoài nắng và dưới đèn xe là đc nha ở ngoài nhìn đẹp lắm màu đeo sang nha. Có cái kính hơi to hơn mình nghĩ , đặc biệt shop tư vấn rất nhiệt tình",
+      "Mình bị nhiều khí hư ấy. Sáng dùng rồi tối dùng cảm thấy dễ chịu hẳn. Sẽ giới thiệu bạn bè mua sử dụng.",
     images: [image29],
     like: 4,
     time: "1 tuần trước",
@@ -296,7 +299,7 @@ const Home = () => {
         </div>
         <div className="absolute left-1 top-5">
           <div className="relative bg-purple-500 px-3 pt-2 pb-6 mx-3">
-            <h3 className="text-[27px] text-white font-oswald font-bold w-[365px]">
+            <h3 className="text-[27px] text-white font-quicksand font-bold w-[365px]">
               LILYFRESH
             </h3>
             <div className="absolute bottom-[-30px] left-3 bg-inherit bg-banner-image py-2 px-4 w-[101%]">
@@ -326,7 +329,7 @@ const Home = () => {
             "--swiper-navigation-color": "#fff",
             "--swiper-pagination-color": "#fff",
           }}
-          loop={true}
+          loop={listImages.length > 1}
           spaceBetween={10}
           navigation={true}
           thumbs={{ swiper: thumbsSwiper }}
@@ -341,7 +344,7 @@ const Home = () => {
         </Swiper>
         <Swiper
           onSwiper={setThumbsSwiper}
-          loop={true}
+          loop={listImages.length > 1}
           spaceBetween={10}
           slidesPerView={4}
           freeMode={true}
